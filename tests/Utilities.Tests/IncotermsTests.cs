@@ -11,6 +11,7 @@ public class IncotermsTests
         var expectedId = 1;
         var expectedName = "EXW";
         var expectedDescription = "Ex-Works";
+        var expectedTransferOfRisk = "At Buyer's Disposal";
         var expectedChargeResponsibilities = new Dictionary<ChargeCategory, Party>
         {
             { ChargeCategory.ExportPackaging, Party.Supplier },
@@ -38,6 +39,7 @@ public class IncotermsTests
         Assert.Equal(expectedId, actualIncoterm.Id);
         Assert.Equal(expectedName, actualIncoterm.Name);
         Assert.Equal(expectedDescription, actualIncoterm.Description);
+        Assert.Equal(expectedTransferOfRisk, actualIncoterm.TransferOfRisk);
         foreach (var charge in expectedChargeResponsibilities)
         {
             Assert.True(actualIncoterm.ChargeResponsibilities.ContainsKey(charge.Key));
@@ -52,6 +54,7 @@ public class IncotermsTests
         var expectedId = 2;
         var expectedName = "FCA";
         var expectedDescription = "Free-Carrier";
+        var expectedTransferOfRisk = "On Buyers Transport";
         var expectedChargeResponsibilities = new Dictionary<ChargeCategory, Party>
         {
             { ChargeCategory.ExportPackaging, Party.Supplier },
@@ -79,6 +82,7 @@ public class IncotermsTests
         Assert.Equal(expectedId, actualIncoterm.Id);
         Assert.Equal(expectedName, actualIncoterm.Name);
         Assert.Equal(expectedDescription, actualIncoterm.Description);
+        Assert.Equal(expectedTransferOfRisk, actualIncoterm.TransferOfRisk);
         foreach (var charge in expectedChargeResponsibilities)
         {
             Assert.True(actualIncoterm.ChargeResponsibilities.ContainsKey(charge.Key));
