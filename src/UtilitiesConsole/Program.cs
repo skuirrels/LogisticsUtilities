@@ -1,7 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using LogisticsUtilities;
+﻿using Utilities;
+
+namespace UtilitiesConsole;
 
 class Program
 {

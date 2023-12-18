@@ -1,6 +1,4 @@
-﻿using System.Xml.Schema;
-
-namespace LogisticsUtilities
+﻿namespace Utilities
 {
     public enum ChargeCategory
     {

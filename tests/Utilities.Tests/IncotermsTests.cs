@@ -1,4 +1,4 @@
-using LogisticsUtilities;
+using Utilities;
 
 namespace Utilities.Tests;
 
