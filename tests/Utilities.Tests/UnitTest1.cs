@@ -1,4 +1,4 @@
-namespace Incoterms.Tests;
+namespace Utilities.Tests;
 
 public class UnitTest1
 {
