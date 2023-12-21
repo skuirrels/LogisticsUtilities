@@ -6,10 +6,10 @@ public class DemurrageCalculator
 
     public class DemurrageResult
     {
-        public DateTime AvailableDate { get; set; }
-        public DateTime DemurrageStartDate { get; set; }
-        public DateTime GateOutDate { get; set; }
-        public int DaysOnDemurrage { get; set; }
+        public DateTime AvailableDate { get; init; }
+        public DateTime DemurrageStartDate { get; init; }
+        public DateTime GateOutDate { get; init; }
+        public int DaysOnDemurrage { get; init; }
     }
 
     public static DemurrageResult CalculateDemurrageDetails(
