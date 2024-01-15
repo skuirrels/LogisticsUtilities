@@ -20,5 +20,7 @@ public static class PackingModes
     public static readonly PackingMode RORO = new(10, "RORO", "Roll On Roll Off");
     public static readonly PackingMode LSE = new(11, "LSE", "Loose");
     public static readonly PackingMode OTHER = new(12, "OTHER", "Other");
+    public static readonly PackingMode UNA = new(13, "UNA", "Unaccompanied");
+    public static readonly PackingMode OBC = new(13, "OBC", "On Board Courier");
     
 }
