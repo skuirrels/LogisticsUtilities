@@ -9,8 +9,10 @@ namespace Utilities.Tests
     {
         [Theory]
         [InlineData("2021-10-01", "2021-10-02", 2, 0)]
-        [InlineData("2021-10-01", "2021-10-02", 1, 1)]
-        [InlineData("2021-10-01", "2021-10-02", 0, 2)]
+        [InlineData("2021-10-01", "2021-10-02", 1, 0)]
+        [InlineData("2021-10-01", "2021-10-02", 0, 1)]
+        [InlineData("2021-10-01", "2021-10-05", 2, 2)]
+        [InlineData("2021-10-01", "2021-10-01", 1, 0)]
         public void TestCalculateDetention(
             string fclWharfGateOut,
             string emptyReturnedOn,
