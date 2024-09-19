@@ -6,8 +6,6 @@ public record TransportMode(
     string Description,
     List<PackingMode> PackingModes);
 
-
-
 public class TransportModes
 {
     public static readonly TransportMode SEA = new(1, "SEA", "Sea", new List<PackingMode> { PackingModes.FCL, PackingModes.LCL, PackingModes.GRP, PackingModes.BREAKBULK });
